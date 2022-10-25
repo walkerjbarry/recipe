@@ -1,0 +1,9 @@
+{
+  "name": "recipe_app",
+  "version": "0.0.0",
+  "description": "recipe_app",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

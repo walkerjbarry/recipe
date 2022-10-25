@@ -1,0 +1,3 @@
+C:\Users\bwalker\Desktop\Resources\P_D_Resources\ROOTS\recipe_app\recipe_app\recipe_app\obj\Debug\recipe_app.njsproj.AssemblyReference.cache
+C:\Users\bwalker\Desktop\Resources\P_D_Resources\ROOTS\recipe_app\recipe_app\recipe_app\obj\Debug\recipe_app.njsproj.CoreCompileInputs.cache
+C:\Users\bwalker\Desktop\Resources\P_D_Resources\ROOTS\recipe_app\recipe_app\recipe_app\bin\Microsoft.NodejsTools.WebRole.dll
