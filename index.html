@@ -11,10 +11,12 @@
 <body onload="loadRandom()">
     <h1 class="header">Let's Cook!</h1>
     <h2 id="title"></h2>
-    <img id="photo"/>
-    <p id="ingredients"></p>
+    <img id="photo" />
+    <ul id="ingredientList"><strong>INGREDIENTS</strong></ul>
     <p id="instructions"></p>
-    <!--<button id="video" onclick="getVideo()">How-To Video</button>-->
+
+    <button id="videoBtn" onclick="getVideo()">How-To Video</button>
+    <video id="videoBox"></video>
     <button id="newRandom" onclick="loadRandom()">New Recipe</button>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
