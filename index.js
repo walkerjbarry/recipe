@@ -24,6 +24,9 @@ function loadRandom() {
     const videoBtn = document.getElementById("videoBtn");
     const videoLink = document.getElementById("makeItWork");
     const ingredient1 = document.getElementById("ingredient1");
+    const videoBox = document.getElementById("videoBox");
+    const video = document.createElement("video");
+
     axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
         .then(meals => {
 
@@ -31,7 +34,8 @@ function loadRandom() {
             title.innerText = meal.strMeal;
             photo.src = meal.strMealThumb;
             instructions.innerText = meal.strInstructions;
-            
+            video.src = meal.strYoutube;
+
             if (meal.strIngredient1 != "") {
                 const ingredient1 = document.createElement("li");
                 ingredient1.innerText = meal.strIngredient1;
@@ -132,10 +136,11 @@ function loadRandom() {
                 ingredient20.innerText = meal.strIngredient20;
                 ingredientList.appendChild(ingredient20);
             }
-            function getVideo() {
-                const videoBox = document.getElementById("videoBox");
-                const video = meal.strYoutube;
-                videoBox.appendChild(video);
-            };
+           
         });
 }
+function getVideo() {
+    const video = document.createElement("video");
+    videoBox.appendChild(video);
+    
+};
