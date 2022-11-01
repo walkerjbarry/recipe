@@ -12,11 +12,13 @@
     <h1 class="header">Let's Cook!</h1>
     <h2 id="title"></h2>
     <img id="photo" />
-    <ul id="ingredientList"><strong>INGREDIENTS</strong></ul>
+    <h3>INGREDIENTS</h3>
+    <ul id="ingredientList"></ul>
+    <h3>INSTRUCTIONS</h3>
     <p id="instructions"></p>
-
-    <button id="videoBtn" onclick="getVideo()">How-To Video</button>
-    <video id="videoBox"></video>
+    <h3>How-To Video</h3>
+    <video id="videoBox" width="420" height="315" autoplay="0" controls="1">
+    </video>
     <button id="newRandom" onclick="loadRandom()">New Recipe</button>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

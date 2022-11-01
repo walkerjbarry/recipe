@@ -4,3 +4,14 @@ body {
     background-image: linear-gradient(45deg,#D50000,#ffCA28); /*the 90 deg indicates that the gradient will be horizontal - default is 180, which is vertical*/
     text-align: center;
 }
+#ingredientList{
+    list-style: none;
+}
+#videoBox{
+    align-items:center;
+}
+#newRandom{
+    border-radius:25px;
+    background-color:green;
+    color:white;
+}
