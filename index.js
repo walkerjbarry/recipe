@@ -31,8 +31,9 @@ function loadRandom() {
             title.innerText = meal.strMeal;/*...such as strMeal, strInstructions, etc.*/
             photo.src = meal.strMealThumb;
             instructions.innerText = meal.strInstructions;  
-            videoBox.src = meal.strYoutube;
-            
+            const splitUrl = meal.strYoutube.split("=");
+            const videoId = splitUrl[1];
+            videoBox.src = "https://www.youtube.com/embed/" + videoId;
 
             for (let i = 1; i <= 20; i++) { //again, we know there will only be max 20 ingredients in any recipe
                
