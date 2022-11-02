@@ -32,35 +32,15 @@ function loadRandom() {
             photo.src = meal.strMealThumb;
             instructions.innerText = meal.strInstructions;  
             videoBox.src = meal.strYoutube;
-                                           
-                                                                 
-            const strIngredient1 = meal.strIngredient1; 
-            const strIngredient2 = meal.strIngredient2;
-            const strIngredient3 = meal.strIngredient3;
-            const strIngredient4 = meal.strIngredient4;
-            const strIngredient5 = meal.strIngredient5;
-            const strIngredient6 = meal.strIngredient6;
-            const strIngredient7 = meal.strIngredient7;
-            const strIngredient8 = meal.strIngredient8;
-            const strIngredient9 = meal.strIngredient9;
-            const strIngredient10 = meal.strIngredient10;
-            const strIngredient11 = meal.strIngredient11;
-            const strIngredient12 = meal.strIngredient12;
-            const strIngredient13 = meal.strIngredient13;
-            const strIngredient14 = meal.strIngredient14;
-            const strIngredient15 = meal.strIngredient15;
-            const strIngredient16 = meal.strIngredient16;
-            const strIngredient17 = meal.strIngredient17;
-            const strIngredient18 = meal.strIngredient18;
-            const strIngredient19 = meal.strIngredient19;
-            const strIngredient20 = meal.strIngredient20;
+            
 
             for (let i = 1; i <= 20; i++) { //again, we know there will only be max 20 ingredients in any recipe
                
-                if ((eval(`strIngredient${i}`)) != "") { /*if the result of evaluating for keys entitled `strIngredient${i}` 
-                                                                      *IS NOT an empty string, we run the following code*/
+                const ingredientIndex = meal[`strIngredient${i}`];
+                if (ingredientIndex != "") { /*if the result of evaluating for keys entitled `strIngredient${i}`  *IS NOT an empty string, we run the following code*/
+
                     const ingredients = document.createElement("li");
-                    ingredients.innerText = eval(`strIngredient${i}`);
+                    ingredients.innerText = ingredientIndex;
                     ingredientList.appendChild(ingredients);
                 }
             }
