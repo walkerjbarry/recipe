@@ -5,23 +5,48 @@
     <meta lang="En" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="index.js" type="text/javascript"></script>
     <title>Recipe App</title>
 </head>
-<body onload="loadRandom()">
-    <h1 class="header">Let's Cook!</h1>
-    <h2 id="title"></h2>
-    <img id="photo" />
-    <h3>INGREDIENTS</h3>
-    <ul id="ingredientList"></ul>
-    <h3>INSTRUCTIONS</h3>
-    <p id="instructions"></p>
-    <h3>How-To Video</h3>
-    <iframe id="videoBox" width="420" height="345"
-     >
-    </iframe>
-    <button id="newRandom" onclick="loadRandom()">New Recipe</button>
 
+<body onload="loadRandom()">
+
+    <div class="wrapper container">
+        
+        <div class="container">
+            <h1 class="header col-12 m-2">Let's Cook!</h1>
+        </div>
+
+        <div class ="container">
+            <h2 id="title" class="col-12 m-2"></h2>
+        </div>
+
+        <div class="col-12">
+            <img id="photo" class="col-8 m-2"/>
+        </div>
+
+        <div class="container col-6 m-2">
+            <button class="btn btn-sm" id="newRandom" onclick="loadRandom()">New Recipe</button>
+        </div>
+
+        <div class="container col-12 m-2">
+            <h3>INGREDIENTS</h3>
+            <ul id="ingredientList"></ul>
+        </div>
+
+        <div class="col-12 m-2">
+            <h3>INSTRUCTIONS</h3>
+            <p id="instructions"></p>
+        </div>
+
+        <div class="video col-12 m-2 mb-2">
+            <h3>How-To Video</h3>
+            <iframe id="videoBox" width="420" height="345">
+            </iframe>
+        </div>
+        
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

@@ -1,17 +1,36 @@
 ﻿
 body {
     font-family: heebo, tahoma, roboto, sans-serif;
-    background-image: linear-gradient(45deg,#D50000,#ffCA28); /*the 90 deg indicates that the gradient will be horizontal - default is 180, which is vertical*/
+    background-image: linear-gradient(45deg,#D50000,#ffCA28); /*the 90 deg indicates that the gradient will be horizontal - default is 180, which is vertical*/  
+}
+.header {
     text-align: center;
 }
-#ingredientList{
+.wrapper{
+    display:flex;
+    align-items:center;   
+}
+#ingredientList {
     list-style: none;
 }
-#videoBox{
+
+#videoBox {
+    align-items: center;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+}
+
+#photo{
+    display:block;
     align-items:center;
 }
-#newRandom{
-    border-radius:25px;
-    background-color:green;
-    color:white;
+
+.video {
+ align-items:center;
+ text-align:center;
 }
+
